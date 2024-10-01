@@ -9,7 +9,7 @@ def get_file_path(_instance, filename):
     return filename
 
 class Evento(models.Model):
-    nome = models.CharField(('Nome'),blank=True, max_length=100)
+    nome = models.CharField(('Nome'), blank=True, max_length=100)
     descricao = models.TextField(('Descrição'), max_length=500)
     imagem = StdImageField(('Imagem'), null=True, blank=True, upload_to=get_file_path, variations={'thumb':{'width':420, 'height':260, 'crop':True}})
 
