@@ -4,6 +4,10 @@ from .models import Evento, Administrador, Atividade, Endereco, Responsavel, Res
 class AtividadeInline(admin.TabularInline):
     model = Atividade
     extra = 1
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3b271dcb329285b93f5416045b9ce35c5e089e73
 @admin.register(Evento)
 class EventoAdmin(admin.ModelAdmin):
     inlines = [AtividadeInline]
